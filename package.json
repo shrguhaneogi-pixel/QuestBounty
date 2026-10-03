@@ -1,0 +1,20 @@
+{
+  "name": "questbounty",
+  "private": true,
+  "workspaces": [
+    "apps/*"
+  ],
+  "scripts": {
+    "setup:anchor-shim": "mkdir -p .localbin && ln -sf \"$(command -v anchor)\" .localbin/anchor-0.31.0",
+    "dev:web": "npm run dev --workspace web",
+    "build:web": "npm run build --workspace web",
+    "lint:web": "npm run lint --workspace web",
+    "typecheck:web": "npm run typecheck --workspace web",
+    "build:program": ".localbin/anchor-0.31.0 build",
+    "test:program": ".localbin/anchor-0.31.0 test",
+    "deploy:devnet": ".localbin/anchor-0.31.0 deploy --provider-cluster devnet"
+  },
+  "allowScripts": {
+    "unrs-resolver": true
+  }
+}

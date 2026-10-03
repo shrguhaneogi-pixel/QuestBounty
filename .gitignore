@@ -1,0 +1,44 @@
+# dependencies
+node_modules/
+.pnp
+.pnp.js
+
+# next.js
+.next/
+out/
+
+# build outputs
+dist/
+build/
+*.tsbuildinfo
+
+# rust / anchor / solana
+target/
+test-ledger/
+.anchor/
+deploy/
+*.so
+
+# secrets & env — never commit keypairs or private keys
+.env
+.env.*
+!.env.example
+keypair*.json
+*-keypair.json
+id.json
+*.pem
+anchors.key.json
+
+# logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+*.log
+
+# editors / os / tooling
+.DS_Store
+.idea/
+.vscode/
+.vercel
+.qwen/
+.localbin/

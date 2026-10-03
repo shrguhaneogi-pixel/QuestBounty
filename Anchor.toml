@@ -1,0 +1,16 @@
+[features]
+resolution = false
+skip-lint = false
+
+[programs.localnet]
+quest_bounty = "H49TxiF1wQBq58JRd2ztqDnZxcG9AGLrn6wiZvaWEngW"
+
+[programs.devnet]
+quest_bounty = "H49TxiF1wQBq58JRd2ztqDnZxcG9AGLrn6wiZvaWEngW"
+
+[registry]
+url = "https://api.apr.dev"
+
+[provider]
+cluster = "devnet"
+wallet = "~/.config/solana/id.json"
